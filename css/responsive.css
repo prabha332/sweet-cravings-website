@@ -1,0 +1,475 @@
+/* ====================================
+   TABLET
+=====================================*/
+
+@media (max-width: 900px) {
+
+    /* Hero */
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .two-column {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    /* Products */
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Features */
+    .features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+   /* Hero */
+   .hero {
+        padding: 60px 0;
+    }
+
+    .hero h1 {
+        font-size: clamp(42px, 8vw, 65px);
+    }
+
+    /* Sections */
+    section {
+        padding: 70px 0;
+    }
+
+    /* CTA */
+    .cta h2 {
+        font-size: 42px;
+    }
+}
+
+
+/* ======================================
+   MOBILE
+=======================================*/
+
+@media (max-width: 650px) {
+
+    /* ----------------------------------
+       GENERAL
+    ---------------------------------- */
+
+    .container {
+        width: 90%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    section {
+        padding: 55px 0;
+    }
+
+    /* Navbar */
+    .navbar {
+        min-height: 65px;
+        padding: 15px 20px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+    }
+
+    .logo img {
+        width: 38px;
+        height: 38px;
+        object-fit: contain;
+    }
+
+    /* Hamburger button */
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        width: 44px;
+        height: 44px;
+
+        padding: 5px;
+        margin: 0;
+
+        border: none;
+        background: transparent;
+
+        cursor: pointer;
+
+        fle-shrink: 0;
+    }
+
+    .menu-toggle span {
+        display: block;
+
+        width: 28px;
+        height: 3px;
+
+        margin: 3px 0;
+
+        background: var(--dark);
+
+        border-radius: 3px;
+    }
+    /* Navigation menu */
+    nav {
+
+        display: none;
+    
+        position: absolute;
+
+        top: 65px;
+
+        left: 0;
+
+        right: 0;
+
+        background: var(--cream);
+
+        padding: 20px;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 15px;
+
+        border-bottom: 1px solid var(--border);
+
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+
+        z-index: 1000;
+    }
+
+    nav.active {
+
+        display: flex;
+
+    } 
+
+    nav a {
+        display: block;
+        padding: 10px 5px;
+        font-size: 16px;
+        text-decoration: none;
+    }
+
+    .nav-button {
+        text-align: center;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 45px 0 35px;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .hero h1 {
+
+        font-size: 40px;
+        line-height: 1.1;
+        margin-bottom: 20px;
+    }
+
+    .hero p {
+        font-size: 16px;
+        line-height: 1.7;
+
+        margin-bottom: 25px;
+    }
+
+    .hero-buttons {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: auto;
+
+        max-height: 350px;
+
+        object-fit: cover;
+        display: block;
+
+        border-radius: 20px;
+    }
+
+    /* -----------------------
+       SECTION HEADINGS
+    ----------------------- */
+
+    .section-heading {
+        margin-bottom: 35px;
+    }
+
+    .section-heading h2,
+    .two-column h2 {
+        font-size: 35px;
+        line-height: 1.15;
+    }
+
+    /* -----------------------
+       TWO COLUMN
+    ----------------------- */
+
+    .two-column {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .about-card {
+        padding: 45px 25px;
+        border-radius: 25px;
+    }
+
+    .about-icon {
+        font-size: 55px;
+    }
+
+    .about-card h3 {    
+        font-size: 24px;
+    }
+
+
+    /* Products */
+    .product-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+
+    .product-card img {
+        width: 100%;
+        height: 220px;
+
+        object-fit: cover;    
+    }
+
+    .product-content {
+        padding: 20px;
+    }
+
+    /* Features */
+    .features {
+
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .feature {
+        padding: 25px 20px;
+    }
+
+    /* CTA */
+
+    .cta-content {   
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 25px;
+    }
+
+    .cta h2 {
+        font-size: 34px;
+        line-height: 1.15;
+    }
+
+    /* -----------------------------
+       CONTACT
+    ----------------------------- */
+
+    .man-placeholder {
+        min-height: 280px;
+
+        padding: 25px;
+
+        border-radius: 20px;
+    }
+
+    .map-placeholoder h3 {
+        font-size: 25px;
+    }
+
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    footer {
+        padding-top: 45px;
+    }
+ 
+    /* ------------------------
+       ORDER FORM
+    ------------------------ */
+
+    .order-form {
+        width: 100%;
+
+        margin-top: 30px;
+    }
+
+    .order-form input,
+    .order-form select,
+    .order-form textarea {
+        width: 100%;
+
+        font-size: 16px;
+    }
+}
+
+
+/* ==============================
+   SMALL PHONES
+============================== */
+@media (max-width: 480px) {
+
+    .container {
+        width: 92%;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 45px 0;
+    }
+
+    /* -----------------------
+       NAVBAR
+    ------------------------ */
+
+    .navbar {
+        min-height: 60px;
+
+        padding: 10px 15px;
+    }
+
+    .logo {
+        font-size: 17px;
+    }
+
+    .logo img {
+        width: 36px;
+        height: 36px;
+    }
+
+    .menu-toggle {
+        width: 42px;
+        height: 42px;
+    }
+
+    .menu-toggle span {
+        width: 27px;
+        height: 3px;
+
+        margin: 3px 0;
+    }
+
+    nav {
+        top: 60px;
+    }
+
+    /* ----------------------------
+       HERO
+    ----------------------------- */
+
+    .hero {
+        padding: 40px 0 30px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+        line-height: 1.1;
+    }
+
+    .hero p {
+        font-size: 15px;
+        line-height: 1.65;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: auto;
+
+        max-height: 280px;
+
+        object-fit: cover;
+    }
+
+    /* Headings */
+    .section-heading h2,
+    .two-column h2 {
+        font-size: 30px;
+    }
+
+    .cta h2 {
+        font-size: 29px;
+    }
+
+    /* Buttons */
+    .btn {
+        padding: 13px 20px;
+
+        font-size: 14px;
+    }
+
+    /*Products */
+    .product-card img {
+        height: 200px;
+    }
+
+    .product-content h3 {
+        font-size: 21px;
+    }
+
+    /* About */
+    .about-card {
+        padding: 35px 20px;
+    }
+
+ 
+    /* Map */
+    .map-placeholder {
+        min-height: 240px;
+    }
+
+    /* ---------------------
+       ORDER FORM
+    --------------------- */
+
+    .order-form input,
+    .order-form select,
+    .order-form textarea {
+        font-size: 16px;
+    }
+}

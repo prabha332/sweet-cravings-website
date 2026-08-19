@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Order | Sweet Cravings</title>
+
+    <link rel="stylesheet"
+          href="../css/style.css">
+
+    <link rel="stylesheet"
+          href="../css/responsive.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="container navbar">
+
+        <a href="../index.html"
+           class="logo">
+
+           <img src="../assets/images/logo.png"
+                alt="Sweet Cravings Logo">
+
+            <span>Sweet Cravings</span>
+
+        </a>
+
+        <nav>
+
+            <a href="../index.html">Home</a>
+              
+            <a href="menu.html">Menu</a>
+
+            <a href="about.html">About</a>
+
+            <a href="contact.html">Contact</a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+<section>
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-label">
+                Sweet Cravings
+            </span>
+
+            <h1>
+                Place Your Order
+            </h1>
+
+            <p>
+                Fill in the details below and contact us
+                to confirm your order.
+            </p>
+
+        </div>
+
+        
+        <form id="orderForm" class="order-form">
+
+            <input
+                type="text"
+                id="customerName"
+                placeholder="Your Name"
+                required
+            >
+
+            <input
+                type="tel"
+                id="phone"
+                placeholder="Phone Number"
+                required
+            >
+
+            <select id="product" required>
+
+                <option value="">
+                    Select Product
+                </option>
+
+                <option value="Birthday Cake">
+                    Birthday Cake
+                </option>
+
+                <option value="Custom Cake">
+                    Custom Cake
+                </option>
+ 
+                <option value="Mithai">
+                    Mithai
+                </option>
+
+                <option value="Pastry">
+                    Pastry
+                </option>
+
+                <option value="Bakery Items">
+                    Bakery Items
+                </option>
+
+            </select>
+
+
+            <input
+                type="number"
+                id="quantity"
+                placeholder="Quantity"
+                min="1"
+                required
+            >
+
+
+            <input
+                type="date"
+                id="date"
+                required
+            >
+
+
+            <textarea
+                id="message"
+                placeholder="Additional details"
+                rows="5"></textarea>
+
+
+
+            <button
+                type="submit"
+                class="btn primary">
+
+                Order on WhatsApp
+
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<script>
+
+document 
+    .getElementById("orderForm")
+    .addEventListener("submit", function(event) {
+
+        event.preventDefault();
+
+        const name =
+            document.getElementById("customerName").value;
+
+        const phone = 
+            document.getElementById("phone").value;
+
+        const product =
+            document.getElementById("product").value;
+
+        const quantity =
+            document.getElementById("quantity").value;
+
+        const date = 
+            document.getElementById("date").value;
+
+        const message = 
+            document.getElementById("message").value;
+
+
+        const text = `
+Hello Sweet Cravings!
+
+I would like to place an order.
+
+Name: ${name}
+Phone: ${phone}
+Product: ${product}
+Quantity: ${quantity}
+Required Date: ${date}
+
+Special Requirements:
+${message}
+`;
+
+
+        const whatsappNumber = "923061438383";
+
+        const url =
+            `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
+
+        window.open(url, "_blank");
+
+    });
+
+</script>
+
+
+
+</body>
+
+</html>
+
+ 
