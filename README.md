@@ -32,6 +32,34 @@ The website includes:
 - Git
 - GitHub Pages
 
+## ✨ Features
+
+### 📱 Responsive Design
+
+The website is designed to work across:
+
+- Mobile phones
+- Tablets
+- Laptops
+- Desktop computers
+
+### 🍰 Product Showcase
+
+Displays bakery products such as:
+
+- Cakes
+- Pastries
+- Sweets
+- Other bakery items
+
+### 📋 Order Page
+
+Customers can provide their information and order details through the order page.
+
+### 📱 Mobile Navigation
+
+A hamburger menu is provided for smaller screen sizes.
+
 ## 📁 Project Structure
 
 ```text
